@@ -1,0 +1,3641 @@
+.formContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formNav {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+  border-top: solid 7.5px rgb(253, 198, 16);
+  border-bottom: solid 3px rgb(253, 198, 16);
+}
+
+.formNav > img {
+  width: 17.5%;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.translate {
+  position: absolute;
+  right: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.translate > label {
+  font-size: 1.15rem;
+}
+
+.translate > select {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.translate > img {
+  height: 1.5rem;
+  width: auto;
+  margin-left: 0.5rem;
+  font-weight: 900;
+}
+
+.prompt {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+  background-color: rgb(253, 198, 16);
+  margin-bottom: 3rem;
+}
+
+.prompt > h2 {
+  margin: 0;
+}
+
+.formWrapper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 10rem;
+}
+
+.formInput {
+  width: 100%;
+}
+
+.labelTitle {
+  margin: 0 0 2rem 0;
+}
+
+.checkWrapper {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+input[type="checkbox"] {
+  outline: 2px solid rgb(253, 198, 16);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  appearance: auto;
+  background-color: rgb(253, 198, 16);
+}
+
+.checkWrapper > label > span {
+  margin-right: 0.5rem;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: black;
+  cursor: pointer;
+}
+
+.inputName {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.inputWrapper {
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.inputWrappers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputWrapper > select {
+  height: 2.75rem;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  font-size: 1rem;
+  outline: solid 1px rgb(164, 164, 164);
+  border: none;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+}
+
+.inputWrapperPhone {
+  width: 47.5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.inputWrapperPhone > label {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.inputWrapperPhone > select {
+  width: 27.5%;
+  height: 2.75rem;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  font-size: 1rem;
+  outline: solid 1px rgb(164, 164, 164);
+  border: none;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.inputWrapperPhone > input {
+  width: 70%;
+}
+
+.inputWrapperEmail {
+  width: 47.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.inputWrapperDate {
+  width: 47.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.dateInput {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dateInputs {
+  width: 30%;
+  background-color: rgb(253, 198, 16);
+  border-radius: 10px;
+  position: absolute;
+  top: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.dateInputs:before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  top: -25px;
+  left: 50%;
+  border-width: 15px;
+  border-color: transparent transparent rgb(253, 198, 16);
+  border-style: solid;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.dateInputs > p {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+label {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+label > span {
+  font-size: 2rem;
+  font-weight: 900;
+  color: red;
+}
+
+.input {
+  width: 100%;
+  height: 2.75rem;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: solid 1px rgb(164, 164, 164);
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.privacy {
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+.notif {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.slideBoxWrapper > input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.slideBoxWrapper {
+  width: 65px;
+  height: 25px;
+  background: rgb(235, 233, 233);
+  margin: 20px 10px;
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.slideBoxWrapper label {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: all 1s ease;
+  cursor: pointer;
+  position: absolute;
+  background: #fff;
+  box-shadow: 0 0 3px 0 #555;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.slideBoxWrapper input[type="checkbox"]:checked + label {
+  left: 45px;
+}
+
+.dateInputss {
+  width: 30%;
+  background-color: rgb(253, 198, 16);
+  border-radius: 10px;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.dateInputss:before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  top: -25px;
+  left: 5%;
+  border-width: 15px;
+  border-color: transparent transparent rgb(253, 198, 16);
+  border-style: solid;
+}
+
+.dateInputss > p {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.terms {
+  margin-top: 2rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.terms > input[type="checkbox"] {
+  outline: 2px solid rgb(253, 198, 16);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  cursor: pointer;
+}
+
+.terms > p {
+  width: 95%;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+button {
+  position: relative;
+  float: right;
+  border: none;
+  background-color: rgb(253, 198, 16);
+  width: 20rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-top: 1rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1440px) {
+  .formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formNav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    border-top: solid 7.5px rgb(253, 198, 16);
+    border-bottom: solid 3px rgb(253, 198, 16);
+  }
+
+  .formNav > img {
+    width: 17.5%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .translate {
+    position: absolute;
+    right: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .translate > label {
+    font-size: 1.15rem;
+  }
+
+  .translate > select {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .translate > img {
+    height: 1.5rem;
+    margin-left: 0.5rem;
+    font-weight: 900;
+  }
+
+  .prompt {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: rgb(253, 198, 16);
+    margin-bottom: 3rem;
+  }
+
+  .prompt > h2 {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  .formWrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 5rem;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+
+  .labelTitle {
+    margin: 0 0 2rem 0;
+  }
+
+  .checkWrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    appearance: auto;
+    background-color: rgb(253, 198, 16);
+  }
+
+  .checkWrapper > label > span {
+    margin-right: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  .inputName {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .inputWrapper {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrappers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+  }
+
+  .inputWrapper > select {
+    height: 2.75rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 1rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+  }
+
+  .inputWrapperPhone {
+    width: 47.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .inputWrapperPhone > label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .inputWrapperPhone > select {
+    width: 27.5%;
+    height: 2.75rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 1rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem;
+  }
+
+  .inputWrapperPhone > input {
+    width: 70%;
+  }
+
+  .inputWrapperEmail {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrapperDate {
+    width: 47.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+
+  .dateInput {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .dateInputs {
+    width: 30%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .dateInputs:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 50%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .dateInputs > p {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  label {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  label > span {
+    font-size: 2rem;
+    font-weight: 900;
+    color: red;
+  }
+
+  .input {
+    width: 100%;
+    height: 2.75rem;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .privacy {
+    font-style: italic;
+    font-size: 1.25rem;
+  }
+
+  .notif {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+  }
+
+  .slideBoxWrapper > input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .slideBoxWrapper {
+    width: 65px;
+    height: 25px;
+    background: rgb(235, 233, 233);
+    margin: 20px 10px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .slideBoxWrapper label {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 3px 0 #555;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+  }
+
+  .slideBoxWrapper input[type="checkbox"]:checked + label {
+    left: 45px;
+  }
+
+  .dateInputss {
+    width: 33%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .dateInputss:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 5%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+  }
+
+  .dateInputss > p {
+    margin: 0;
+    font-size: 1.15rem;
+  }
+
+  .terms {
+    margin-top: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  .terms > input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.15rem;
+    height: 1.15rem;
+    cursor: pointer;
+  }
+
+  .terms > p {
+    width: 95%;
+    font-size: 1.25rem;
+    font-style: italic;
+  }
+
+  button {
+    position: relative;
+    float: right;
+    border: none;
+    background-color: rgb(253, 198, 16);
+    width: 20rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formNav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    border-top: solid 7.5px rgb(253, 198, 16);
+    border-bottom: solid 3px rgb(253, 198, 16);
+  }
+
+  .formNav > img {
+    width: 17.5%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .translate {
+    position: absolute;
+    right: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .translate > label {
+    font-size: 1rem;
+  }
+
+  .translate > select {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .translate > img {
+    height: 1.35rem;
+    margin-left: 0.5rem;
+    font-weight: 900;
+  }
+
+  .prompt {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: rgb(253, 198, 16);
+    margin-bottom: 3rem;
+  }
+
+  .prompt > h2 {
+    margin: 0;
+    font-size: 1.15rem;
+  }
+
+  .formWrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 4rem;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+
+  .labelTitle {
+    margin: 0 0 2rem 0;
+    font-size: 1.75rem;
+  }
+
+  .checkWrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    appearance: auto;
+    background-color: rgb(253, 198, 16);
+  }
+
+  .checkWrapper > label > span {
+    margin-right: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  .inputName {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .inputWrapper {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrappers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+  }
+
+  .inputWrapper > select {
+    height: 2.75rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 1rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+  }
+
+  .inputWrapperPhone {
+    width: 47.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .inputWrapperPhone > label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .inputWrapperPhone > select {
+    width: 27.5%;
+    height: 2.75rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 1rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem;
+  }
+
+  .inputWrapperPhone > input {
+    width: 70%;
+  }
+
+  .inputWrapperEmail {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrapperDate {
+    width: 47.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+
+  .dateInput {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .dateInputs {
+    width: 30%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .dateInputs:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 50%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .dateInputs > p {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  label {
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  label > span {
+    font-size: 2rem;
+    font-weight: 900;
+    color: red;
+  }
+
+  .input {
+    width: 100%;
+    height: 2.75rem;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .privacy {
+    font-style: italic;
+    font-size: 1.05rem;
+  }
+
+  .notif {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+  }
+
+  .slideBoxWrapper > input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .slideBoxWrapper {
+    width: 65px;
+    height: 25px;
+    background: rgb(235, 233, 233);
+    margin: 20px 10px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .slideBoxWrapper label {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 3px 0 #555;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+  }
+
+  .slideBoxWrapper input[type="checkbox"]:checked + label {
+    left: 45px;
+  }
+
+  .dateInputss {
+    width: 33%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .dateInputss:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 5%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+  }
+
+  .dateInputss > p {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  .terms {
+    margin-top: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .terms > input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.15rem;
+    height: 1.15rem;
+    cursor: pointer;
+  }
+
+  .terms > p {
+    width: 95%;
+    font-size: 1.15rem;
+    font-style: italic;
+  }
+
+  button {
+    position: relative;
+    float: right;
+    border: none;
+    background-color: rgb(253, 198, 16);
+    width: 20rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formNav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    border-top: solid 7.5px rgb(253, 198, 16);
+    border-bottom: solid 3px rgb(253, 198, 16);
+  }
+
+  .formNav > img {
+    width: 20%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .translate {
+    position: absolute;
+    right: 5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .translate > label {
+    font-size: 1rem;
+  }
+
+  .translate > select {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .translate > img {
+    height: 1.35rem;
+    margin-left: 0.5rem;
+    font-weight: 900;
+  }
+
+  .prompt {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: rgb(253, 198, 16);
+    margin-bottom: 3rem;
+  }
+
+  .prompt > h2 {
+    margin: 0;
+    font-size: 1.05rem;
+  }
+
+  .formWrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 3rem;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+
+  .labelTitle {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .checkWrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    appearance: auto;
+    background-color: rgb(253, 198, 16);
+  }
+
+  .checkWrapper > label > span {
+    margin-right: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  .inputName {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .inputWrapper {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrappers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .inputWrapper > select {
+    height: 2.25rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 1rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+  }
+
+  .inputWrapperPhone {
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .inputWrapperPhone > label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .inputWrapperPhone > select {
+    width: 27.5%;
+    height: 2.25rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 1rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem;
+  }
+
+  .inputWrapperPhone > input {
+    width: 70%;
+  }
+
+  .inputWrapperEmail {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrapperDate {
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  .dateInput {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .dateInputs {
+    width: 30%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .dateInputs:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 50%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .dateInputs > p {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+
+  label {
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  label > span {
+    font-size: 2rem;
+    font-weight: 900;
+    color: red;
+  }
+
+  .input {
+    width: 100%;
+    height: 2.25rem;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .privacy {
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  .notif {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+  }
+
+  .slideBoxWrapper > input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .slideBoxWrapper {
+    width: 45px;
+    height: 20px;
+    background: rgb(235, 233, 233);
+    margin: 20px 10px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .slideBoxWrapper label {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 3px 0 #555;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+  }
+
+  .slideBoxWrapper input[type="checkbox"]:checked + label {
+    left: 25px;
+  }
+
+  .dateInputss {
+    width: 33%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .dateInputss:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 5%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+  }
+
+  .dateInputss > p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .terms {
+    margin-top: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .terms > input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  .terms > p {
+    width: 95%;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  button {
+    position: relative;
+    float: right;
+    border: none;
+    background-color: rgb(253, 198, 16);
+    width: 20rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formNav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem;
+    border-top: solid 7.5px rgb(253, 198, 16);
+    border-bottom: solid 3px rgb(253, 198, 16);
+  }
+
+  .formNav > img {
+    width: 25%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .translate {
+    position: absolute;
+    right: 3%;
+    display: flex;
+    align-items: center;
+  }
+
+  .translate > label {
+    font-size: 0.85rem;
+  }
+
+  .translate > select {
+    border: none;
+    outline: none;
+    font-size: 0.85rem;
+  }
+
+  .translate > img {
+    height: 1.15rem;
+    margin-left: 0.5rem;
+    font-weight: 900;
+  }
+
+  .prompt {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: rgb(253, 198, 16);
+    margin-bottom: 3rem;
+  }
+
+  .prompt > h2 {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .formWrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+
+  .labelTitle {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .checkWrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    appearance: auto;
+    background-color: rgb(253, 198, 16);
+  }
+
+  .checkWrapper > label > span {
+    margin-right: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  .inputName {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .inputWrapper {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrappers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .inputWrapper > select {
+    height: 2.25rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 1rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+  }
+
+  .inputWrapperPhone {
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .inputWrapperPhone > label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .inputWrapperPhone > select {
+    width: 27.5%;
+    height: 2.25rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 1rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem;
+  }
+
+  .inputWrapperPhone > input {
+    width: 70%;
+  }
+
+  .inputWrapperEmail {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrapperDate {
+    width: 49%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  .dateInput {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .dateInputs {
+    width: 30%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.8rem;
+  }
+
+  .dateInputs:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 50%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .dateInputs > p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  label > span {
+    font-size: 2rem;
+    font-weight: 900;
+    color: red;
+  }
+
+  .input {
+    width: 100%;
+    height: 2.25rem;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .privacy {
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  .notif {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+  }
+
+  .slideBoxWrapper > input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .slideBoxWrapper {
+    width: 45px;
+    height: 20px;
+    background: rgb(235, 233, 233);
+    margin: 20px 10px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .slideBoxWrapper label {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 3px 0 #555;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+  }
+
+  .slideBoxWrapper input[type="checkbox"]:checked + label {
+    left: 25px;
+  }
+
+  .dateInputss {
+    width: 33%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .dateInputss:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 5%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+  }
+
+  .dateInputss > p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .terms {
+    margin-top: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .terms > input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  .terms > p {
+    width: 95%;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  button {
+    position: relative;
+    float: right;
+    border: none;
+    background-color: rgb(253, 198, 16);
+    width: 20rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formNav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem 3rem 1rem;
+    border-top: solid 7.5px rgb(253, 198, 16);
+    border-bottom: solid 3px rgb(253, 198, 16);
+  }
+
+  .formNav > img {
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .translate {
+    position: absolute;
+    bottom: 10px;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .translate > label {
+    font-size: 1rem;
+  }
+
+  .translate > select {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .translate > img {
+    height: 1.25rem;
+    margin-left: 0.5rem;
+    font-weight: 900;
+  }
+
+  .prompt {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    background-color: rgb(253, 198, 16);
+    margin-bottom: 3rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .prompt > h2 {
+    margin: 0;
+    font-size: 1.35rem;
+  }
+
+  .formWrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+
+  .labelTitle {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .checkWrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    appearance: auto;
+    background-color: rgb(253, 198, 16);
+  }
+
+  .checkWrapper > label > span {
+    margin-right: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  .inputName {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .inputWrapper {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrappers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .inputWrapper > select {
+    height: 2rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 0.825rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+  }
+
+  .inputWrapperPhone {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .inputWrapperPhone > label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .inputWrapperPhone > select {
+    width: 27.5%;
+    height: 2rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 0.825rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem;
+  }
+
+  .inputWrapperPhone > input {
+    width: 70%;
+  }
+
+  .inputWrapperEmail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrapperDate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  .dateInput {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .dateInput > select {
+    font-size: 0.8rem;
+  }
+
+  .dateInputs {
+    width: 30%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.8rem;
+  }
+
+  .dateInputs:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 50%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .dateInputs > p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  label > span {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: red;
+  }
+
+  .input {
+    width: 100%;
+    height: 2rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .privacy {
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  .notif {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    font-size: 1.05rem;
+  }
+
+  .slideBoxWrapper > input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .slideBoxWrapper {
+    width: 45px;
+    height: 20px;
+    background: rgb(235, 233, 233);
+    margin: 20px 10px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .slideBoxWrapper label {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 3px 0 #555;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+  }
+
+  .slideBoxWrapper input[type="checkbox"]:checked + label {
+    left: 25px;
+  }
+
+  .dateInputss {
+    width: 33%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .dateInputss:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 5%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+  }
+
+  .dateInputss > p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .terms {
+    margin-top: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .terms > input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  .terms > p {
+    width: 95%;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  button {
+    position: relative;
+    float: right;
+    border: none;
+    background-color: rgb(253, 198, 16);
+    width: 20rem;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formNav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem 4rem 1rem;
+    border-top: solid 7.5px rgb(253, 198, 16);
+    border-bottom: solid 3px rgb(253, 198, 16);
+  }
+
+  .formNav > img {
+    width: 50%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .translate {
+    position: absolute;
+    bottom: 10px;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .translate > label {
+    font-size: 1.15rem;
+  }
+
+  .translate > select {
+    border: none;
+    outline: none;
+    font-size: 1.15rem;
+  }
+
+  .translate > img {
+    height: 1.75rem;
+    margin-left: 0.5rem;
+    font-weight: 900;
+  }
+
+  .prompt {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    background-color: rgb(253, 198, 16);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .prompt > h2 {
+    margin: 0;
+    font-size: 1.35rem;
+    text-align: center;
+  }
+
+  .formWrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+
+  .labelTitle {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .checkWrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    appearance: auto;
+    background-color: rgb(253, 198, 16);
+  }
+
+  .checkWrapper > label > span {
+    margin-right: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  .inputName {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .inputWrapper {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrappers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .inputWrapper > select {
+    height: 2rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 0.825rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+  }
+
+  .inputWrapperPhone {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .inputWrapperPhone > label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .inputWrapperPhone > select {
+    width: 27.5%;
+    height: 2rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 0.825rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem;
+  }
+
+  .inputWrapperPhone > input {
+    width: 70%;
+  }
+
+  .inputWrapperEmail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrapperDate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  .dateInput {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .dateInput > select {
+    font-size: 0.8rem;
+  }
+
+  .dateInputs {
+    width: 30%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.8rem;
+  }
+
+  .dateInputs:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 50%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .dateInputs > p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  label {
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  label > span {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: red;
+  }
+
+  .input {
+    width: 100%;
+    height: 2rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    margin-bottom: 1rem;
+  }
+
+  .privacy {
+    font-style: italic;
+    font-size: 0.9rem;
+  }
+
+  .notif {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+
+  .slideBoxWrapper > input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .slideBoxWrapper {
+    width: 45px;
+    height: 17.5px;
+    background: rgb(235, 233, 233);
+    margin: 20px 10px;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+
+  .slideBoxWrapper label {
+    display: block;
+    width: 17.5px;
+    height: 17.5px;
+    border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 3px 0 #555;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+  }
+
+  .slideBoxWrapper input[type="checkbox"]:checked + label {
+    left: 25px;
+  }
+
+  .dateInputss {
+    width: 100%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .dateInputss:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 5%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+  }
+
+  .dateInputss > p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .terms {
+    margin-top: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .terms > input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  .terms > p {
+    width: 95%;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  button {
+    position: relative;
+    float: none;
+    border: none;
+    background-color: rgb(253, 198, 16);
+    width: 100%;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formNav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem 4rem 1rem;
+    border-top: solid 7.5px rgb(253, 198, 16);
+    border-bottom: solid 3px rgb(253, 198, 16);
+  }
+
+  .formNav > img {
+    width: 60%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .translate {
+    position: absolute;
+    bottom: 10px;
+    left: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .translate > label {
+    font-size: 1rem;
+  }
+
+  .translate > select {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .translate > img {
+    height: 1.5rem;
+    margin-left: 0.5rem;
+    font-weight: 900;
+  }
+
+  .prompt {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    box-sizing: border-box;
+    padding: 1rem 0.75rem;
+    background-color: rgb(253, 198, 16);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .prompt > h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .formWrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+
+  .labelTitle {
+    margin: 0 0 2rem 0;
+    font-size: 1.75rem;
+    font-weight: 900;
+  }
+
+  .checkWrapper {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    appearance: auto;
+    background-color: rgb(253, 198, 16);
+  }
+
+  .checkWrapper > label > span {
+    margin-right: 0.5rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  .inputName {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .inputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrappers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .inputWrapper > select {
+    height: 3rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 1rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .inputWrapperPhone {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .inputWrapperPhone > label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .inputWrapperPhone > select {
+    width: 27.5%;
+    height: 3rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 1rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem;
+  }
+
+  .inputWrapperPhone > input {
+    width: 70%;
+  }
+
+  .inputWrapperEmail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrapperDate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .dateInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .dateInput > select {
+    font-size: 1rem;
+  }
+
+  .dateInputs {
+    width: 100%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1.25rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .dateInputs:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 50%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .dateInputs > p {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  label {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  label > span {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: red;
+  }
+
+  .input {
+    width: 100%;
+    height: 3rem;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    margin-bottom: 2rem;
+  }
+
+  .privacy {
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  .notif {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  section {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+  }
+
+  .slideBoxWrapper > input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .slideBoxWrapper {
+    width: 55px;
+    height: 30px;
+    background: rgb(235, 233, 233);
+    margin: 10px;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+
+  .slideBoxWrapper label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 3px 0 #555;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+  }
+
+  .slideBoxWrapper input[type="checkbox"]:checked + label {
+    left: 25px;
+  }
+
+  .dateInputss {
+    width: 100%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  .dateInputss:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 5%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+  }
+
+  .dateInputss > p {
+    margin: 0;
+    font-size: 1.15rem;
+  }
+
+  .terms {
+    margin-top: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .terms > input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  .terms > p {
+    width: 95%;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  button {
+    position: relative;
+    float: none;
+    border: none;
+    background-color: rgb(253, 198, 16);
+    width: 100%;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formNav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem 4rem 1rem;
+    border-top: solid 7.5px rgb(253, 198, 16);
+    border-bottom: solid 3px rgb(253, 198, 16);
+  }
+
+  .formNav > img {
+    width: 70%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .translate {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .translate > label {
+    font-size: 1rem;
+  }
+
+  .translate > select {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .translate > img {
+    height: 1.5rem;
+    margin-left: 0.5rem;
+    font-weight: 900;
+  }
+
+  .prompt {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    box-sizing: border-box;
+    padding: 1rem 0.75rem;
+    background-color: rgb(253, 198, 16);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .prompt > h2 {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .formWrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .formInput {
+    width: 100%;
+  }
+
+  .labelTitle {
+    margin: 0 0 2rem 0;
+    font-size: 1.75rem;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .checkWrapper {
+    display: flex;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    appearance: auto;
+    background-color: rgb(253, 198, 16);
+  }
+
+  .checkWrapper > label > span {
+    margin-right: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  .inputName {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+  }
+
+  .inputWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrappers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .inputWrapper > select {
+    height: 2.5rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 0.85rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .inputWrapperPhone {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .inputWrapperPhone > label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .inputWrapperPhone > select {
+    width: 27.5%;
+    height: 2.5rem;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    font-size: 0.85rem;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    box-sizing: border-box;
+    padding: 0.5rem;
+  }
+
+  .inputWrapperPhone > input {
+    width: 70%;
+  }
+
+  .inputWrapperEmail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .inputWrapperDate {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .dateInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .dateInput > select {
+    font-size: 0.85rem;
+  }
+
+  .dateInputs {
+    width: 100%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1.25rem 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .dateInputs:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 50%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+
+  .dateInputs > p {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+
+  label {
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+
+  label > span {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: red;
+  }
+
+  .input {
+    width: 100%;
+    height: 2.5rem;
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: solid 1px rgb(164, 164, 164);
+    border: none;
+    margin-bottom: 2rem;
+  }
+
+  .privacy {
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  .notif {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  section {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+
+  .slideBoxWrapper > input[type="checkbox"] {
+    visibility: hidden;
+  }
+
+  .slideBoxWrapper {
+    width: 55px;
+    height: 25px;
+    background: rgb(235, 233, 233);
+    margin: 7px;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+
+  .slideBoxWrapper label {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: all 1s ease;
+    cursor: pointer;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 3px 0 #555;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+  }
+
+  .slideBoxWrapper input[type="checkbox"]:checked + label {
+    left: 30px;
+  }
+
+  .dateInputss {
+    width: 100%;
+    background-color: rgb(253, 198, 16);
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  .dateInputss:before {
+    content: "";
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -25px;
+    left: 5%;
+    border-width: 15px;
+    border-color: transparent transparent rgb(253, 198, 16);
+    border-style: solid;
+  }
+
+  .dateInputss > p {
+    margin: 0;
+    font-size: 1.15rem;
+  }
+
+  .terms {
+    margin-top: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+  }
+
+  .terms > input[type="checkbox"] {
+    outline: 2px solid rgb(253, 198, 16);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+  }
+
+  .terms > p {
+    width: 95%;
+    font-size: 1rem;
+    font-style: italic;
+  }
+
+  button {
+    position: relative;
+    float: none;
+    border: none;
+    background-color: rgb(253, 198, 16);
+    width: 100%;
+    height: 3.25rem;
+    font-size: 1.25rem;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 1rem;
+  }
+}
